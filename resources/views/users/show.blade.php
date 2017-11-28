@@ -12,10 +12,11 @@
                         <div class="media-body">
                             <hr>
                             <h4> <strong>个人简介</strong> </h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>{{$user->introduction}}</p>
                             <hr>
                             <h4>注册于</h4>
-                            <p>2017 11 18</p>
+
+                            <p>{{$user->created_at->diffForHumans()}}</p>
                         </div>
                     </div>
                 </div>
